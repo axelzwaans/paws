@@ -11,6 +11,8 @@ import Container from "react-bootstrap/Container";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios"
 
+import dog6 from "../../assets/dog6.jpg";
+
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
@@ -102,9 +104,9 @@ function SignInForm() {
                     </Form>
                 </Container>
                 <Container className={`mt-3 ${appStyles.Content}`}>
-                    <Link className={styles.Link} to="/signup">
-                        Don't have an account? <span>Sign up now!</span>
-                    </Link>
+                    <span className={styles.span} to="/signup">
+                        Don't have an account? <Link className={styles.Link}>Sign up now!</Link>
+                    </span>
                 </Container>
             </Col>
             <Col
@@ -113,7 +115,7 @@ function SignInForm() {
             >
                 <Image
                     className={`${appStyles.FillerImage}`}
-                    src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+                    src={dog6}
                 />
             </Col>
         </Row>
