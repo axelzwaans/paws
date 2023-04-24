@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../../styles/Post.module.css";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 
@@ -38,13 +38,13 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
   };
 
-  const handleUnLike = async () => {
+  const handleUnlike = async () => {
     try {
-      await axiosRes.delete(`/likes/${like_id}/`)
+      await axiosRes.delete(`/likes/${like_id}/`);
       setPosts((prevPosts) => ({
         ...prevPosts,
         results: prevPosts.results.map((post) => {
@@ -54,7 +54,7 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
   };
 
@@ -87,7 +87,7 @@ const Post = (props) => {
               <i className="far fa-heart" />
             </OverlayTrigger>
           ) : like_id ? (
-            <span onClick={handleUnLike}>
+            <span onClick={handleUnlike}>
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
           ) : currentUser ? (

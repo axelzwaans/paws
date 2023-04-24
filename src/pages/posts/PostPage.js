@@ -5,8 +5,8 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
 import appStyles from "../../App.module.css";
-import { useParams } from "react-router-dom";
-import { axiosReq } from "../../api/axiosDefaults"
+import { useParams } from "react-router";
+import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
 
 function PostPage() {
@@ -16,17 +16,17 @@ function PostPage() {
   useEffect(() => {
     const handleMount = async () => {
       try {
-        const [{data: post}] = await Promise.all([
-          axiosReq.get(`/posts/${id}`)
-        ])
-        setPost({results: [post]})
-        console.log(post)
+        const [{ data: post }] = await Promise.all([
+          axiosReq.get(`/posts/${id}`),
+        ]);
+        setPost({ results: [post] });
+        console.log(post);
       } catch (err) {
-        console.log(err)
+        console.log(err);
       }
     };
 
-    handleMount()
+    handleMount();
   }, [id]);
 
   return (
