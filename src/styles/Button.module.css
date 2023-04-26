@@ -33,36 +33,21 @@
   width: 100%;
 }
 
-.Blue,
-.BlueOutline:hover,
-.Bright:hover {
-  color: #ffffff;
-}
-
-.Bright {
+.Blue {
   background-color: #123c69;
   opacity: 0.8;
   color: #ffffff;
 }
 
-.Black,
-.BlackOutline:hover {
-  background-color: #242a3d;
+.Red,
+.Outline:hover {
+  background-color: #ac3b61;
   color: white;
-  background-color: #242a3d;
-  color: aliceblue;
+  background-color: #ac3b61;
+  color: white;
 }
-.Black:hover,
-.BlackOutline {
-  background-color: #dadadf;
-  color: #242a3d;
-  border-color: #242a3d;
-  background-color: aliceblue;
-  color: #242a3d;
-}
-
-.BlueOutline,
-.Blue:hover {
-  border: 1px solid #2142b2;
-  background-color: #bc617f;
+.Red:hover,
+.Outline {
+  background-color: #edc7b7;
+  color: black;
 }
