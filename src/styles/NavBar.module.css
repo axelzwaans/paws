@@ -10,3 +10,9 @@
 .Active i {
     color: #123c69;
 }
+
+.Title {
+    color: #ac3b61;
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
