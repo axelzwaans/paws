@@ -106,9 +106,7 @@ I ran Lighthouse tests on Chrome to check the performance, quality and correctne
 
 ### JavaScript testing
 
-1. Install and configure ESLint using
-npm init @eslint/config
-2. Edit .eslint
+
 
 ### Manual testing
 
