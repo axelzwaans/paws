@@ -106,7 +106,7 @@ I ran Lighthouse tests on Chrome to check the performance, quality and correctne
 
 ### JavaScript testing
 
-
+I ran all Javascript files included in this project through 
 
 ### Manual testing
 
