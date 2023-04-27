@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "overrides": [],
@@ -15,8 +16,10 @@
     }
   },
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "req|res|next|__" }],
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
-    "react/prop-types": [0, { "ignore": ["children"] }],
     "react/no-children-prop": [
         0,
         {

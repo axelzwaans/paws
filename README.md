@@ -98,15 +98,25 @@ I ran Lighthouse tests on Chrome to check the performance, quality and correctne
 
 **Desktop**
 
+![lighthouse-desktop](src/readme/images/lighthouse-desktop.png)
+
 **Mobile**
+
+![lighthouse-mobile](src/readme/images/lighthouse-mobile.png)
 
 ### HTML testing
 
+
+
 ### CSS testing
+
+I used the W3C CSS validation service to check for errors and warnings and received the following report;
+
+![cssvalidator](src/readme/images/cssvalidator.png)
 
 ### JavaScript testing
 
-I ran all Javascript files included in this project through 
+I ran all Javascript files included in this project through ESLint; a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs. After making a few minor changes in some files there were no errors. 
 
 ### Manual testing
 
