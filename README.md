@@ -27,3 +27,52 @@ You can view the user stories in Github project [here](https://github.com/axelzw
 This app has been styled using React Bootstrap. The colour scheme was inspired by a cool color pallete I found which matched the type of style I wanted for this project. I kept the design very simple, focusing on functionality and user-friendliness. I used 'Roboto' as the main font in the app because of its simple and elegant style. I chose 'Sans-Serif' as a backup in case the primary font is unable to load.
 
 ### Wireframes
+
+I created a low-fidelity wireframe using Balsamiq to help me design my app. I created a mock-up of each page;
+
+**Sign in page**
+
+![balsamiq-signin](src/readme/images/balsamiq-signin.png)
+
+**Home page**
+
+![balsamiq-mainpage](src/readme/images/balsamiq-mainpage.png)
+
+**Post detail**
+
+![balsamiq-postdetail](src/readme/images/balsamiq-postdetail.png)
+
+**Profile page**
+
+![balsamiq-profilepage](src/readme/images/balsamiq-profilepage.png)
+
+**Create post**
+
+![balsamiq-createpost](src/readme/images/balsamiq-createpost.png)
+
+### Entity Relationship Model
+
+I added a graphical representation in the form of an entity-relationship model to depict the relationship between entities within my models. I used Lucidchart to design it.
+
+![erd](src/readme/images/erd.png)
+
+## Features
+
+I set out to create a simple app that anyone can engage in, providing an easy way for people with dogs to share their pcitures of their pets. I wanted this app to be a little more than just a platform for uploading picture so I included functionality which allows users to interact with each other on a basic level, similar to a social media app.
+
+### Existing features
+
+- **Nav bar** - My app has a responsive nav bar which allows the user to seamlesly navigate between pages. The nav bar will show appropriate navigation options depending on whether the user is authenticated. It also includes a logo which links the user back to the landing page from any page. Going by Bootstrap's 'mobile first' approach, the navbar menu automatically renders as collapsed on smaller screen sizes, and can be toggled by a hamburger button.
+
+![navbar](src/readme/images/navbar.png)
+
+- **Home page** - The home page can also be refered to as the posts list page, as it will display posts to both logged in and logged out users. This page has several components; A search bar, the posts list, and popular profiles list.
+
+![homepage](src/readme/images/homepage.png)
+
+- **Post detail page** - When a user clicks on a post from the posts list page, they will be brought to that post's detail page where the user can inspect it in further detail and leave a comment. If the user is the post owner, they can edit or delete their post.
+
+![postdetail](src/readme/images/postdetail.png)
+
+- **Post edit page** - This pagfe
+
