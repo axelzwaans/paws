@@ -74,5 +74,6 @@ I set out to create a simple app that anyone can engage in, providing an easy wa
 
 ![postdetail](src/readme/images/postdetail.png)
 
-- **Post edit page** - This pagfe
+- **Post edit page** - This page allows the user to update an existing post. 
+
 
