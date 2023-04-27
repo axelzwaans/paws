@@ -118,11 +118,35 @@ I ran all Javascript files included in this project through ESLint; a tool for i
 
 | Function| Test case | Result |                                                          
 |---------|-----------|--------|
+| Authentication | Sign up | Pass
+| Authentication | Sign in | Pass
+| Authentication | Set the acess tokens to refresh and avoid logout of users | Pass
 | Navigation | Access navbar on every page | Pass
 | Navigation | Infinite scroll | Pass
 | Navigation | Use keywords in search bar to find specific posts | Pass
 | Posts | View all posts | Pass
-| Posts | Click on a post to go  | Pass
+| Posts | View post detail | Pass
+| Posts | Edit my post | Pass
+| Posts | Delete my post | Pass
+| Likes | Like a post | Pass
+| Likes | Unlike a post | Pass
+| Comments | View comments | Pass
+| Comments | Comment on a post | Pass
+| Comments | Edit my comment | Pass
+| Comments | Delete my comment | Pass
+| Profiles | View most followed profiles | Pass
+| Profiles | Follow a profile | Pass
+| Profiles | Unfollow a profile | Pass
+| Profiles | View profile detail | Pass
+
+## Deployment
+
+
+
+
+
+
+
 
 
 
