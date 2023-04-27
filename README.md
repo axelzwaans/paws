@@ -58,7 +58,7 @@ I added a graphical representation in the form of an entity-relationship model t
 
 ## Features
 
-I set out to create a simple app that anyone can engage in, providing an easy way for people with dogs to share their pcitures of their pets. I wanted this app to be a little more than just a platform for uploading picture so I included functionality which allows users to interact with each other on a basic level, similar to a social media app.
+I set out to create a simple app that anyone can engage in, providing an easy way for people with dogs to share pictures of their pets. I wanted this app to be a little more than just a platform for uploading pictures so I included functionality which allows users to interact with each other on a basic level, similar to a social media app.
 
 ### Existing features
 
@@ -76,4 +76,43 @@ I set out to create a simple app that anyone can engage in, providing an easy wa
 
 - **Post edit page** - This page allows the user to update an existing post. 
 
+![postedit](src/readme/images/postedit.png)
+
+- **Profile page** - The profile page displays more information about the profile, including their number of posts, followers and followings. From here, the profile owner has access to links to edit their profile, change their username and change their password. All of the profile's posts are also listed.
+
+![profilepage](src/readme/images/profilepage.png)
+
+- **Profile edit page** - From here the profile owner can update their profile image and bio. 
+
+![editprofile](src/readme/images/editprofile.png)
+
+- **Feed page** - The feed page is very similar to the posts lists page except that it only includes posts of profiles which the user follows. 
+
+- **Liked page** - This page is also similar in that in contains all posts which the user has liked.
+
+## Testing
+
+### Lighthouse testing
+
+I ran Lighthouse tests on Chrome to check the performance, quality and correctness of this web app. I generated reports for mobile and desktop devices which gave the following results;
+
+**Desktop**
+
+**Mobile**
+
+### HTML testing
+
+### CSS testing
+
+### JavaScript testing
+
+1. Install and configure ESLint using
+npm init @eslint/config
+2. Edit .eslint
+
+### Manual testing
+
+| Function| Test case | Result |                                                          
+|---------|-----------|--------|
+| Navigation | Form checks if email exists | Pass
 
