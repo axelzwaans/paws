@@ -104,10 +104,6 @@ I ran Lighthouse tests on Chrome to check the performance, quality and correctne
 
 ![lighthouse-mobile](src/readme/images/lighthouse-mobile.png)
 
-### HTML testing
-
-
-
 ### CSS testing
 
 I used the W3C CSS validation service to check for errors and warnings and received the following report;
@@ -122,5 +118,13 @@ I ran all Javascript files included in this project through ESLint; a tool for i
 
 | Function| Test case | Result |                                                          
 |---------|-----------|--------|
-| Navigation | Form checks if email exists | Pass
+| Navigation | Access navbar on every page | Pass
+| Navigation | Infinite scroll | Pass
+| Navigation | Use keywords in search bar to find specific posts | Pass
+| Posts | View all posts | Pass
+| Posts | Click on a post to go  | Pass
+
+
+
+
 
