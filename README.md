@@ -50,12 +50,6 @@ I created a low-fidelity wireframe using Balsamiq to help me design my app. I cr
 
 ![balsamiq-createpost](src/readme/images/balsamiq-createpost.png)
 
-### Entity Relationship Model
-
-I added a graphical representation in the form of an entity-relationship model to depict the relationship between entities within my models. I used Lucidchart to design it.
-
-![erd](src/readme/images/erd.png)
-
 ## Features
 
 I set out to create a simple app that anyone can engage in, providing an easy way for people with dogs to share pictures of their pets. I wanted this app to be a little more than just a platform for uploading pictures so I included functionality which allows users to interact with each other on a basic level, similar to a social media app.
@@ -90,6 +84,20 @@ I set out to create a simple app that anyone can engage in, providing an easy wa
 
 - **Liked page** - This page is also similar in that it contains all posts which the user has liked.
 
+## Components
+
+I took advantage of React's reusable components throughout this project to help improve the scalability, maintainability, and readability of the codebase. A few examples of reusable components I used:
+
+- **Asset** - A reusable UI component that displays an image and a message, with an optional spinner animation for loading states.
+
+- **Avatar** - A reusable UI component that displays an avatar image with an optional text label next to it.
+
+- **MoreDropDown** - Renders dropdown menus using the react-bootstrap library and FontAwesome icons, and can be used to perform actions such as editing or deleting a user profile.
+
+- **NavBar** - A React component for a navigation bar that displays different icons and links depending on whether the user is logged in or not, and allows the user to add a post, view their feed, sign out, and access their profile.
+
+- **NotFound** - A React component that displays an error message with an image when the requested page does not exist.
+
 ## Testing
 
 ### Lighthouse testing
@@ -112,14 +120,14 @@ I used the W3C CSS validation service to check for errors and warnings and recei
 
 ### JavaScript testing
 
-I ran all Javascript files included in this project through ESLint; a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, intending to make code more consistent and avoid bugs. After making a few minor changes in some files, there were no errors. 
+I ran all Javascript files included in this project through ESLint; a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, intending to make code more consistent and avoid bugs. After making a few minor changes in some files, there were no more errors. 
 
 ### Manual testing
 
 | Function| Test case | Result |                                                          
 |---------|-----------|--------|
-| Authentication | Sign up | Pass
-| Authentication | Sign in | Pass
+| Authentication | I can sign up | Pass
+| Authentication | I can sign in | Pass
 | Authentication | Set the access tokens to refresh and avoid logout of users | Pass
 | Navigation | Access the navbar on every page | Pass
 | Navigation | Infinite scroll | Pass
@@ -139,6 +147,24 @@ I ran all Javascript files included in this project through ESLint; a tool for i
 | Profiles | Unfollow a profile | Pass
 | Profiles | View profile detail | Pass
 
+## Libraries, frameworks and tools
+
+I used front-end libraries in my app to provide additional functionality, simplify development, and improve the user experience. Frameworks were used to provide a set of opinionated tools and guidelines that help structure and organize code, as well as streamline the development process. Below is a list of the main libraries and frameworks used:
+
+- **React** - An open-source JavaScript library used for building user interfaces, which allowed me to create reusable UI components and efficiently manage the state of my applications.
+
+- **React Bootstrap** - A front-end framework that combines the power of React.js library with the styling of Bootstrap, providing a set of pre-built UI components for building a responsive and mobile-first web application.
+
+- **Axios** -  I used Axios for making HTTP requests from a web browser or Node.js, providing a simple and consistent API for handling data communication with external resources.
+
+- **JWT-decode** - A lightweight JavaScript library I used for decoding JSON Web Tokens (JWTs) on the client-side, providing a simple and easy-to-use interface for accessing the claims stored within a JWT.
+
+- **React-router-dom** - A library for implementing client-side routing, allowing me to create dynamic and navigable user interfaces with multiple views and URLs.
+
+- **React-dom** - A package in React that provides DOM-specific methods that can be used to render React components in the browser, allowing me to create interactive and dynamic user interfaces.
+
+- **React-scripts** - A configuration and script setup tool provided by Create React App, which allows me to quickly set up and start building my React app with minimal configuration.
+
 ## Deployment
 
 I deployed this app on Heroku, which is a cloud application platform for developers to build, run, and operate their applications. These are the steps taken to deploy:
@@ -156,7 +182,6 @@ I deployed this app on Heroku, which is a cloud application platform for develop
 ### Content
 
 - [Balsamiq](https://balsamiq.com) for wireframes.
-- [Lucidchart](https://www.lucidchart.com) for entity relationship model.
 - [StackOverflow](https://stackoverflow.com) for help with code-related issues.
 - [React Bootstrap](https://react-bootstrap.github.io/) for app layout and components.
 - [Heroku](https://dashboard.heroku.com/apps) for cloud platform.
